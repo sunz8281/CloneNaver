@@ -1,10 +1,10 @@
 
 body{margin: 5px; position: relative;}
 #search{
-    width: 708px;
+    width: 706px;
     margin: 0 auto;
     margin-top: 50px;
-    height: auto;
+    height: 100px;
     overflow:visible;
     border-radius: 10px;
 }
@@ -14,8 +14,10 @@ body{margin: 5px; position: relative;}
     padding: 8px;
     border: 1px solid #03C75A;
     border-radius: 50px;
+    background-color: white;
 }
 #search_box2 {
+    position: absolute;
     color: gray;
     width: 675px;
     padding: 8px;
@@ -93,4 +95,7 @@ input[type="button"]{
 
 #autoComplete:hover{
     cursor: pointer;
+}
+#close{
+    float: right;
 }

@@ -19,6 +19,7 @@
                 <div class = autoSection>자동완성 끄기</div><div class=dot>&middot;</div>
                 <div class = autoSection>도움말</div><div class=dot>&middot;</div>
                 <div class = autoSection>신고</div>
+                <div class = autoSection id = close>닫기</div>
             </div>
         </div>
     <div class="keyboard">
@@ -33,6 +34,7 @@
     </div>
 <script>
     const $keyboardPop = document.getElementById('keyboardpop');
+    const $sText = document.getElementById('search_text');
     const keyboard = document.querySelector(".keyboard");
     const $AutoComp = document.getElementById('autoComplete');
     const $search = document.getElementById('search');
@@ -42,11 +44,18 @@
     let lastY = 0; 
     let startX = 0; 
     let startY = 0; 
+    var spaceFlag = true
+    $sText.focus();
 
     keyboard.style.display = 'none';
     $sBox2.style.display = 'none';
+
     $keyboardPop.addEventListener('click', popUp);
     function popUp(){
+        $sBox2.style.display='none';
+        $AutoComp.style.transform = 'scaleY(1)';
+        $sBox1.style.border='1px solid #03C75A';
+        $sBox1.style.borderRadius='50px';
         if(keyboard.style.display=='block')
         {
             keyboard.style.display = 'none';
@@ -56,23 +65,45 @@
             keyboard.style.left ='1100px';
         }
     }
-    $AutoComp.addEventListener('click', AC);
-    function AC(){
+    $AutoComp.addEventListener('click', function(){
+        keyboard.style.display = 'none';
         if($sBox2.style.display=='none'){
-            $sBox2.style.display='flex';
-            $AutoComp.style.transform = 'scaleY(-1)';
-            $sBox1.style.border='none';
-            $search.style.boxShadow='0px 7px 5px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0,0,0,0.1)';
-            $sBox1.style.borderRadius='10px 10px 0px 0px';
+            ACshow();
         } else {
-            $sBox2.style.display='none';
-            $AutoComp.style.transform = 'scaleY(1)';
-            $sBox1.style.border='1px solid #03C75A';
-            $search.style.boxShadow='none';
-            $sBox1.style.borderRadius='50px';
+            AChide();
+            $sText.focus();
         }
-    }
+    });
+    window.addEventListener('keypress', function(e){
+        if(e.key!=' '){
+            $sText.focus();
+        }
+    });
+    $sText.addEventListener('input', function(){
+        $sText.focus();
+        if($sText.value){
+            ACshow();
+        } else {
+            AChide();
+        }
+    });
 
+    function ACshow(){
+        $sText.focus();
+        $sBox2.style.display='flex';
+        $AutoComp.style.transform = 'scaleY(-1)';
+        $sBox1.style.border='none';
+        $sBox1.style.borderRadius="10px 10px 0px 0px";
+        $search.style.boxShadow="0px 7px 5px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.1)";
+        $sBox2.style.borderTop='1px solid lightgray'
+    }
+    function AChide(){
+        $sBox2.style.display='none';
+        $AutoComp.style.transform = 'scaleY(1)';
+        $sBox1.style.border='1px solid #03C75A';
+        $search.style.boxShadow='none';
+        $sBox1.style.borderRadius='50px';
+    }
     keyboard.addEventListener('mousedown', function(e){
     e.preventDefault(); 
     startX = e.clientX; 
