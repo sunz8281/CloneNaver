@@ -1,10 +1,37 @@
-
-body{margin: 5px; position: relative;}
+body{margin: 0; font-family: 'NanumSquareACR';}
+#naver{width: 1300px; margin: 0 auto; position: relative; 
+    border: 1px solid red;}
+#header{
+    margin-top: 10px;
+    border: 1px solid red;
+}
+#container{
+    border: 1px solid red;
+    margin-top: 15px;
+    display: flex;
+}
+#footer{
+    height: 380px;
+    background-color: cyan;
+}
+#naver_menu{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 40px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+#menu, #pay{margin-right: 10px;}
+#alarm, #talk, #shopping_bag{margin-left: 10px;}
 #search{
     width: 706px;
     margin: 0 auto;
-    margin-top: 50px;
-    height: 100px;
+    /* height: 100px; */
     overflow:visible;
     border-radius: 10px;
 }
@@ -17,23 +44,32 @@ body{margin: 5px; position: relative;}
     background-color: white;
 }
 #search_box2 {
-    position: absolute;
-    color: gray;
-    width: 675px;
-    padding: 8px;
-    padding-left: 25px;
-    border-top: 1px solid lightgray;
-    border-radius: 0px 0px 10px 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    color: gray;
+    width: 676px;
+    padding: 15px;
+    border: 1px solid white;
+    border-top: 1px solid lightgray;
+    border-radius: 0px 0px 10px 10px;
     background-color: white;
+}
+#autoText{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
 }
 .autoSection{
     font-size: 13px;
 }
+.autoSection:hover{
+    cursor: pointer;
+}
 .dot{
-    font-size: 20px;
-    color: lightgray;
+    border-radius: 15px;
+    background-color: #DDD;
     margin: 0px 5px;
 }
 form{
@@ -52,6 +88,15 @@ form{
     height: 43px;
     width: 43px;
 }
+#search_submit{
+    background-image: url(../image/Logo_search2.png);
+    background-size: cover;
+    border: none;
+    background-color: white;
+}
+#search_submit:hover{
+    cursor: pointer;
+}
 #search_text::placeholder{
     color: white;
 }
@@ -59,7 +104,7 @@ form{
     outline: none;
 }
 #search_text:focus::placeholder{
-    color:lightgray;
+    color:#ddd;
 }
 #keyboardpop{
     background-image: url('../image/keyboard.png');
@@ -71,7 +116,8 @@ input[type="button"]{
     cursor: pointer;
 }
 .keyboard{
-    z-index: 99;
+    display: none;
+    z-index: 99; /*제일 앞에 보이도록*/
     position: absolute;
     width: 400px;
     height: 200px;
@@ -93,9 +139,234 @@ input[type="button"]{
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-#autoComplete:hover{
+#box2Btn:hover{
     cursor: pointer;
 }
 #close{
+    margin-right: 10px;
     float: right;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width:670px;
+}
+.things{
+    font-size: 13px;
+    text-align: center;
+}
+.things:hover{
+    cursor: pointer;
+}
+.things_img{
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.things_img:hover{
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1), 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.section{
+    background-color: gray;
+    height: 2200px;
+    margin: 15px;
+}
+#section1{
+    width:830px;
+}
+#section2{
+    width:420px;
+}
+.boxTitle{
+    display: flex;
+    align-items: center;
+    color: lightgray;
+}
+.titleSection{
+    color: gray;
+    font-family: 'NanumBarunGothicBold';
+    font-size: 16px;
+}
+.titleSection:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.boxTitle > span{
+    margin: 0px 3px;
+}
+.boxnav{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 750px;
+    height: 10px;
+    background-color: #f6f6f6;
+    border-radius: 3px;
+}
+.section>div{
+    background-color:dodgerblue;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border:1px solid lightgray;
+}
+#ad1{
+    height: 130px;
+}
+#news{
+    height: 430px;
+    background-color: white;
+}
+#contents{
+    height: 330px;
+    padding: 20px;
+}
+.newsitem{
+    margin-bottom: 20px;
+}
+#newsStand{
+    color: black;
+}
+#Mediatable{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    overflow: hidden;
+}
+table{
+    border-collapse: collapse;
+    border-style: hidden;
+}
+td{
+    width: 130px;
+    height: 55px;
+    word-break:break-all;
+    font-size: 13px;
+    border: 1px solid lightgray;
+    background-color:royalblue;
+    color: darkgray;
+    background-image: url(../image/로고.png);
+    background-size: cover;
+}
+td > .Medias{
+    margin: 0 auto;
+    width: 90px;
+    height: 15px;
+    /* margin: 20px auto; */
+    visibility: hidden;
+}
+td:hover{
+    background-image: none;
+}
+td:hover > .Medias{
+    visibility: visible;
+}
+.links{
+    color: white;
+    text-decoration: none;
+}
+.links:hover{
+    font-family: 'NanumSquareACB';
+    cursor: pointer;
+    text-decoration: underline;
+}
+#nextpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-top: 1px solid lightgray;
+}
+.arrowbox{
+    text-align: center;
+    padding: 8px;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+}
+.arrowbox:hover{
+    background-color: #f9f9f9;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+#pagetext{
+    text-align: center;
+    font-size: 13px;
+    margin: 33px;
+    font-weight: 300;
+}
+#pagename{
+    color:blue;
+}
+#shopping{
+    height: 560px;
+}
+#hobby{
+    height: 1030px;
+}
+#login{
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    height: 120px;
+    background-color: white;
+}
+#loginBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #03C75A;
+    margin: 15px auto;
+    width: 380px;
+    height: 56px;
+}
+#loginBtn:hover{
+    cursor: pointer;
+    background-color:#00b752;
+}
+#NAVERLogo{
+    margin: 5px;
+    width: 75px;
+    height: 15px;
+}
+#loginText{
+    font-size: 14px;
+    width: 45px;
+    height: 15px;
+}
+#FindAndJoin{
+    color: lightgray;
+}
+.linktext{
+    color: #555;
+    text-decoration: none;
+}
+.linktext:hover{
+    text-decoration: underline;
+}
+#ad2{
+    height: 240px;
+}
+#weather{
+    height: 240px;
+}
+#stock{
+    height: 230px;
+}
+#ad3{
+    height: 80px;
+}
+#widget{
+    height: 800px;
+}
+#ad4{
+    height: 80px;
 }
