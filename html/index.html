@@ -10,11 +10,11 @@
     <div id="naver">
         <div id = header>
             <div id="naver_menu">
-                <div id="left">
+                <div class="left">
                     <img id="menu" src="../image/menu.png" class="logo" alt="메뉴">
                     <img id="pay" src="../image/naver_pay.png" class="logo" alt="네이버페이">
                 </div>
-                <div id="right">
+                <div class="right">
                     <img id="talk" src="../image/talk.png" class="logo" alt="네이버톡">
                     <img id="alarm" src="../image/alarm.png" class="logo" alt="알림">
                     <img id="shopping_bag" src="../image/shopping_bag.png" class="logo" alt="장바구니">
@@ -58,67 +58,165 @@
             <div class="section" id="section1">
                 <div id="ad1"></div>
                 <div id="news">
-                    <div id="contents">
-                        <div class="boxTitle newsitem">
-                            <span class=titleSection id="newsStand" name="newspage">뉴스스탠드</span> <div class="dot" style="width: 4px; height: 4px;"></div>
-                            <span class=titleSection id="editMedia" name="Mediapage">언론사편집</span> <span class="">/</span>
-                            <span class=titleSection id="enter" name="enterpage">엔터</span> <span>/</span>
-                            <span class=titleSection id="sports" name="sportspage">스포츠</span> <span>/</span>
-                            <span class=titleSection id="economy" name="economypage">경제</span> <span>/</span>
-                            <span class=titleSection id="shoppingToday" name="shoppingpage">쇼핑투데이</span>
+                    <div class="contents">
+                        <div class="boxTitle boxitem" style="color: lightgray;">
+                            <span class="titleSection newstitle selected" id="newsStand" name="newspage">뉴스스탠드</span> <div class="dot" style="width: 4px; height: 4px;"></div>
+                            <span class="titleSection newstitle" id="editMedia" name="Mediapage">언론사편집</span> <span>/</span>
+                            <span class="titleSection newstitle" id="enter" name="enterpage">엔터</span> <span>/</span>
+                            <span class="titleSection newstitle" id="sports" name="sportspage">스포츠</span> <span>/</span>
+                            <span class="titleSection newstitle" id="economy" name="economypage">경제</span> <span>/</span>
+                            <span class="titleSection newstitle" id="shoppingToday" name="shoppingpage">쇼핑투데이</span>
                         </div>
-                        <div class="boxnav newsitem">
-                            <div>전체언론사</div><img src="../image/triangle.png" height="5px"> ㅣ <div>연합뉴스</div> <div style="width:3px; height:3px;" class="dot"></div>
+                        <div class="boxnav boxitem">
+                            <div><div class="links items">전체언론사<img class="items" src="../image/triangle.png" height="5px"></div> ㅣ <a href="" class="items links" >뫄뫄뉴스</a> <div style="width:3px; height:3px;" class="dot"></div><div class="items links" id="newsname"><a href="" class="items links" id="newsrandom">어쩌구저쩌구블라블라</a></div></div>
+                            <div><a href="" class="links items">뉴스스탠드</a>ㅣ<a href="" class="links items">뉴스홈</a></div>
                         </div>
-                        <div class="boxcontents newsitem">
-                            <div class="contentsSection">
-                                <div id="Mediatable">
-                                    <table border="1px">
-                                        <tr>
-                                            <td><div class="Medias" id="Media1"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media2"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media3"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media4"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media5"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media6"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                        </tr>
-                                        <tr>
-                                            <td><div class="Medias" id="Media7"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media8"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media9"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media10"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media11"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media12"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                        </tr>
-                                        <tr>
-                                            <td><div class="Medias" id="Media13"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media14"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media15"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media16"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media17"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media18"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                        </tr>
-                                        <tr>
-                                            <td><div class="Medias" id="Media19"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media20"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media21"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media22"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media23"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                            <td><div class="Medias" id="Media24"><span class="links">구독</span> ㅣ <a href="" class="links">기사보기</a></div></td>
-                                        </tr>
-                                    </table>
-                                </div>
+                        <div class="boxitem">
+                            <div id="Mediatable">
+                                <table border="1px">
+                                            <tr>
+                                                <td><div class="Medias" id="Media1"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media2"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media3"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media4"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media5"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media6"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="Medias" id="Media7"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media8"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media9"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media10"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media11"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media12"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="Medias" id="Media13"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media14"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media15"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media16"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media17"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media18"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="Medias" id="Media19"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media20"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media21"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media22"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media23"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                                <td><div class="Medias" id="Media24"><span class="links items">구독</span> ㅣ <a href="" class="links items">기사보기</a></div></td>
+                                            </tr>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <div id="nextpage">
+                    <div class="nextpage">
                         <div class="arrowbox">&lt;</div>
-                        <div id="pagetext"><span id="pagename">언론사</span> 더보기 <span id="current">14</span>/<span id="max">21</span></div>
+                        <div id="pagetext"><span class="pagename">언론사</span> 더보기 <span id="current">1</span>/<span id="max">4</span></div>
                         <div class="arrowbox">&gt;</div>
                     </div>
                 </div>
-                <div id="shopping"></div>
-                <div id="hobby"></div>
+                <div id="shopping">
+                    <div class="contents">
+                        <div class="boxTitle boxitem" style="color: lightgray;">
+                            <span class="titleSection shoppingtitle selected" id="shoppings" name="shoppingspage">쇼핑</span> <span>/</span>
+                            <span class="titleSection shoppingtitle" id="mens" name="menspage">맨즈</span> <span>/</span>
+                            <span class="titleSection shoppingtitle" id="oneplusdeal" name="oneplusdealPage">원쁠딜</span> <span>/</span>
+                            <span class="titleSection shoppingtitle" id="shoppinglive" name="sportspage">쇼핑라이브</span>
+                        </div>
+                        <div class="boxitem" id="shoppingcontents">
+                            <div id="shoppingleft">
+                                <div id="sLeft1" class="backcolor">
+                                    <div><a href="" class="links">쿠팡</a><div class="dot"></div><a href="" class="links">지마켓</a><div class="dot"></div><a href="" class="links">옥션</a><div class="dot"></div><a href="" class="links">SSG닷컴</a></div>
+                                    <div><a href="" class="links">11번가</a><div class="dot"></div><a href="" class="links">올리브영</a><div class="dot"></div><a href="" class="links">위메프</a><div class="dot"></div><a href="" class="links">하프클럽</a></div>
+                                    <div><a href="" class="links">GS SHOP</a><div class="dot"></div><a href="" class="links">CJ온스타일</a><div class="dot"></div><a href="" class="links">패션플러스</a></div>
+                                </div>
+                                <div id="sLeft2" class="backcolor">
+                                    <a href="" class="links"><div class="box"></div>쇼핑홈</a>
+                                    <a href="" class="links"><div class="box"></div>리뷰적립</a>
+                                    <a href="" class="links"><div class="box"></div>주문</a>
+                                    <a href="" class="links"><div class="box"></div>장바구니</a>
+                                </div>
+                                <div id="sLeft3"><a href="" class="links">
+                                    <div id="shoppingAD"><img src="../image/교수.png" width="250px"></div>
+                                    <div id="adtext">블라블라블라블라</div>
+                                </a></div>
+                            </div>
+                            <div id="shoppingright">
+                                <a href="" class="SrightAD" id="SrightAD1"><div class="ADimg"><img src="../image/이미지2.png"></div><div class="links Srighttext">도는하얀도화지 레는둥근레코드</div></a>
+                                <a href="" class="SrightAD" id="SrightAD2"><div class="ADimg"><img src="../image/이미지2.png"></div><div class="links Srighttext">미는파란미나리 파는예쁜파랑새</div></a>
+                                <a href="" class="SrightAD" id="SrightAD3"><div class="ADimg"><img src="../image/이미지2.png"></div><div class="links Srighttext">솔은작은솔방을 라는라디오고요</div></a>
+                                <a href="" class="SrightAD" id="SrightAD4"><div class="ADimg"><img src="../image/이미지2.png"></div><div class="links Srighttext">시는졸졸시냇물 다함께부르자</div></a>
+                                <a href="" class="SrightAD" id="SrightAD5"><div class="ADimg"><img src="../image/이미지2.png"></div><div class="links Srighttext">도레미파솔라시도 솔도</div></a>
+                                <a href="" class="SrightAD" id="SrightAD6"><div class="ADimg"><img src="../image/이미지2.png"></div><div class="links Srighttext">도는하얀도화지 레는둥근레코드</div></a>
+                                <a href="" class="SrightAD" id="SrightAD7"><div class="ADimg"><img src="../image/이미지2.png"></div><div class="links Srighttext">미는파란미나리 파는예쁜파랑새</div></a>
+                                <a href="" class="SrightAD" id="SrightAD8"><div class="ADimg"><img src="../image/이미지2.png"></div><div class="links Srighttext">솔은작은솔방을 라는라디오고요</div></a>
+                                <a href="" class="SrightAD" id="SrightAD9"><div class="ADimg"><img src="../image/이미지2.png"></div><div class="links Srighttext">시는졸졸시냇물 다함께부르자</div></a>
+                                <a href="" class="SrightAD" id="SrightAD10"><div class="ADimg"><img src="../image/이미지2.png"></div><div class="links Srighttext">도레미파솔라시도 솔도</div></a>
+                            </div>
+                        </div>
+                        <div class="boxnav boxitem">
+                            <div><div class="items" style="font-family: 'NanumBarunGothicBold';">오늘의 혜택</div><div style="width:3px; height:3px;" class="dot"></div><a href="" class="items" id="shoppingeffect"><img class="items" src="../image/로고2.png"><div class="items links" id="shoppingrandom">&&##100%할인쿠폰드립니다##&&</div></a></div>
+                        </div>
+                    </div>
+                    <div class="nextpage">
+                        <div class="arrowbox">&lt;</div>
+                        <div id="pagetext"><span class="pagename">쇼핑아이템</span> 더보기 <span id="current">1</span>/<span id="max">13</span></div>
+                        <div class="arrowbox">&gt;</div>
+                    </div>
+                </div>
+                <div id="hobby">
+                    <div class="contents">
+                        <div class="boxTitle boxitem" style="color: lightgray;">
+                            <span class="titleSection hobbytitle selected" id="subscribe" name="subscribepage">추천&middot;구독</span> <span>/</span>
+                            <span class="titleSection hobbytitle" id="car" name="carpage">자동차</span> <span>/</span>
+                            <span class="titleSection hobbytitle" id="webtoon" name="webtoompage">웹툰</span> <span>/</span>
+                            <span class="titleSection hobbytitle" id="fasionbeauty" name="fasionbeautypage">패션뷰티</span> <span>/</span>
+                            <span class="titleSection hobbytitle" id="recipe" name="recipepage">레시피</span> <span>/</span>
+                            <span class="titleSection hobbytitle" id="living" name="livingpage">리빙</span><span>/</span>
+                            <span class="titleSection hobbytitle" id="bookroom" name="bookroompage">책방</span><span>/</span>
+                            <span class="titleSection hobbytitle" id="knowledge" name="knowledgepage">지식+</span><span>/</span>
+                            <span class="titleSection hobbytitle" id="healty" name="healtypage">건강</span><span>/</span>
+                            <span class="titleSection hobbytitle" id="game" name="gamepage">게임</span>
+                        </div>
+                        <div class="boxnav boxitem" id="hobbynav">
+                            <div><div class="items hobbybtn selected">인기</div><div class="items hobbybtn">동물</div><div class="items hobbybtn">여행</div><div class="items hobbybtn">연애 결혼</div><div class="items hobbybtn">영화</div><div class="items hobbybtn">육아</div></div>
+                            <div style="font-family: 'NanumBarunGothicBold';" class="links">구독홈</div>
+                        </div>
+                        <div class="boxitem" id="hobbycontents">
+                            <a href="" class="hobbyitem linkshover"><div class="hobbyimgbox"><img src="../image/산와머니.png" class="imageaction"></div><div class="hobbytext linksaction">이것은글자입니다 이것은글자입니다</div><div class="hobbywriter"><img src="../image/사람.png">작성자</div></a>
+                            <a href="" class="hobbyitem linkshover"><div class="hobbyimgbox"><img src="../image/이미지5.png" class="imageaction"></div><div class="hobbytext linksaction">이것은글자입니다 이것은글자입니다</div><div class="hobbywriter"><img src="../image/사람.png">작성자</div></a>
+                            <a href="" class="hobbyitem linkshover"><div class="hobbyimgbox"><img src="../image/이미지5.png" class="imageaction"></div><div class="hobbytext linksaction">이것은글자입니다 이것은글자입니다</div><div class="hobbywriter"><img src="../image/사람.png">작성자</div></a>
+                            <a href="" class="hobbyitem linkshover"><div class="hobbyimgbox"><img src="../image/이미지5.png" class="imageaction"></div><div class="hobbytext linksaction">이것은글자입니다 이것은글자입니다</div><div class="hobbywriter"><img src="../image/사람.png">작성자</div></a>
+
+                            <a href="" class="hobbyitem linkshover"><div class="hobbyimgbox"><img src="../image/이미지5.png" class="imageaction"></div><div class="hobbytext linksaction">이것은글자입니다 이것은글자입니다</div><div class="hobbywriter"><img src="../image/사람.png">작성자</div></a>
+                            <a href="" class="hobbyitem linkshover"><div class="hobbyimgbox"><img src="../image/이미지5.png" class="imageaction"></div><div class="hobbytext linksaction">이것은글자입니다 이것은글자입니다</div><div class="hobbywriter"><img src="../image/사람.png">작성자</div></a>
+                            <a href="" class="hobbyitem linkshover"><div class="hobbyimgbox"><img src="../image/이미지5.png" class="imageaction"></div><div class="hobbytext linksaction">이것은글자입니다 이것은글자입니다</div><div class="hobbywriter"><img src="../image/사람.png">작성자</div></a>
+                            <a href="" class="hobbyitem linkshover"><div class="hobbyimgbox"><img src="../image/이미지5.png" class="imageaction"></div><div class="hobbytext linksaction">이것은글자입니다 이것은글자입니다</div><div class="hobbywriter"><img src="../image/사람.png">작성자</div></a>
+
+                            <a href="" class="hobbyitem linkshover"><div class="hobbyimgbox"><img src="../image/이미지5.png" class="imageaction"></div><div class="hobbytext linksaction">이것은글자입니다 이것은글자입니다</div><div class="hobbywriter"><img src="../image/사람.png">작성자</div></a>
+                            <a href="" class="hobbyitem linkshover"><div class="hobbyimgbox"><img src="../image/이미지5.png" class="imageaction"></div><div class="hobbytext linksaction">이것은글자입니다 이것은글자입니다</div><div class="hobbywriter"><img src="../image/사람.png">작성자</div></a>
+                            <a href="" class="hobbyitem linkshover"><div class="hobbyimgbox"><img src="../image/이미지5.png" class="imageaction"></div><div class="hobbytext linksaction">이것은글자입니다 이것은글자입니다</div><div class="hobbywriter"><img src="../image/사람.png">작성자</div></a>
+                            <a href="" class="hobbyitem linkshover"><div class="hobbyimgbox"><img src="../image/이미지5.png" class="imageaction"></div><div class="hobbytext linksaction">이것은글자입니다 이것은글자입니다</div><div class="hobbywriter"><img src="../image/사람.png">작성자</div></a>
+                        </div>
+                        <hr color="lightgray" width="100%" noshade class="boxitem"/>
+                        <div id="hobbyanycontents">
+                            <div id="HcontentsTitle">매일 찾는 짧은 즐거움</div>
+                            <div id="Hcontentsbox">
+                                <div><a href="" class="linkshover"><div class="imagebox"><video class="imageaction" src="../image/하은.mov" style="position: absolute; bottom: 0px;"></div><div class="textbox linksaction">가나다라마바사아자차카타파하</div><div class="writer">김인간</div></a></div>
+                                <div><a href="" class="linkshover"><div class="imagebox"><img class="imageaction" src="../image/이미지4.png"></div><div class="textbox linksaction">가나다라마바사아자차카타파하</div><div class="writer">박인간</div></a></div>
+                                <div><a href="" class="linkshover"><div class="imagebox"><img class="imageaction" src="../image/이미지4.png"></div><div class="textbox linksaction">가나다라마바사아자차카타파하</div><div class="writer">이인간</div></a></div>
+                                <div><a href="" class="linkshover"><div class="imagebox"><img class="imageaction" src="../image/이미지4.png"></div><div class="textbox linksaction">가나다라마바사아자차카타파하</div><div class="writer">최인간</div></a></div>
+                                <div><a href="" class="linkshover"><div class="imagebox"><img class="imageaction" src="../image/이미지4.png"></div><div class="textbox linksaction">가나다라마바사아자차카타파하</div><div class="writer">정인간</div></a></div>
+                                <div><a href="" class="linkshover"><div class="imagebox"><img class="imageaction" src="../image/이미지4.png"></div><div class="textbox linksaction">가나다라마바사아자차카타파하</div><div class="writer">지인간</div></a></div>
+                            </div>
+                        </div>
+                        <button id="nextbtn">&gt;</button>
+                    </div>
+                    <div id="open">
+                        펼쳐보기 <span style="color: blue;">+</span>
+                    </div>
+                </div>
             </div>
             <div class="section" id="section2">
                 <div id="login">
@@ -127,7 +225,14 @@
                     <div id="FindAndJoin"><a href="" class="linktext">아이디 찾기</a> ㅣ <a href="" class="linktext">비밀번호 찾기</a> ㅣ <a href="" class="linktext">회원가입</a></div>
                 </div>
                 <div id="ad2"></div>
-                <div id="weather"></div>
+                <div id="weather">
+                    <div class="weathertitle">
+                        <div class="boxtitle"><a href="" class="titles links">날씨</a><a href=""><div id="weathercompare"><img src=""><div>예보 비교</div></div></a></div>
+                        <div id="boxaddress">부산시 가락동</div>
+                    </div>
+                    <hr noshade color="lightgray" style="margin: 10px 0px;"/>
+                    <div id="weathercontents"></div>
+                </div>
                 <div id="stock"></div>
                 <div id="ad3"></div>
                 <div id="widget"></div>
@@ -137,7 +242,7 @@
     </div>
     <div id = footer></div>
     <script src="../js/search.js?after"></script>
-    <script src="../js/news.js?after"></script>
+    <script src="../js/container.js?after"></script>
     <script>
         $sText.focus();
     </script>

@@ -1,12 +1,11 @@
 body{margin: 0; font-family: 'NanumSquareACR';}
-#naver{width: 1300px; margin: 0 auto; position: relative; 
-    border: 1px solid red;}
+#naver{width: 1300px; margin: 0 auto; position: relative;
+    /* border: 1px solid red; */
+}
 #header{
     margin-top: 10px;
-    border: 1px solid red;
 }
 #container{
-    border: 1px solid red;
     margin-top: 15px;
     display: flex;
 }
@@ -69,7 +68,7 @@ body{margin: 0; font-family: 'NanumSquareACR';}
 }
 .dot{
     border-radius: 15px;
-    background-color: #DDD;
+    background-color: #CCC;
     margin: 0px 5px;
 }
 form{
@@ -171,8 +170,14 @@ nav{
 }
 .section{
     background-color: gray;
-    height: 2200px;
     margin: 15px;
+}
+.section>div{
+    background-color:dodgerblue;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border:1px solid lightgray;
 }
 #section1{
     width:830px;
@@ -183,7 +188,6 @@ nav{
 .boxTitle{
     display: flex;
     align-items: center;
-    color: lightgray;
 }
 .titleSection{
     color: gray;
@@ -194,25 +198,32 @@ nav{
     cursor: pointer;
     text-decoration: underline;
 }
+.boxtitle .selected{
+    color: black;
+}
 .boxTitle > span{
     margin: 0px 3px;
 }
 .boxnav{
-    font-size: 14px;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
     padding: 20px;
     width: 750px;
     height: 10px;
     background-color: #f6f6f6;
     border-radius: 3px;
 }
-.section>div{
-    background-color:dodgerblue;
+.boxnav > div{
+    display: flex;
+    align-items: center;
+}
+.boxnav .items{
+    color:black;
+    margin: 0px 3px;
+}
+#newsname{
     overflow: hidden;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    border:1px solid lightgray;
 }
 #ad1{
     height: 130px;
@@ -221,15 +232,14 @@ nav{
     height: 430px;
     background-color: white;
 }
-#contents{
+#news > .contents{
     height: 330px;
+}
+.contents{
     padding: 20px;
 }
-.newsitem{
+.boxitem{
     margin-bottom: 20px;
-}
-#newsStand{
-    color: black;
 }
 #Mediatable{
     border: 1px solid lightgray;
@@ -265,15 +275,19 @@ td:hover > .Medias{
     visibility: visible;
 }
 .links{
-    color: white;
     text-decoration: none;
 }
 .links:hover{
-    font-family: 'NanumSquareACB';
     cursor: pointer;
     text-decoration: underline;
 }
-#nextpage{
+.Medias > .items{
+    color: white;
+}
+.Medias > .items:hover{
+    font-family: 'NanumSquareACB';
+}
+.nextpage{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,14 +314,257 @@ td:hover > .Medias{
     margin: 33px;
     font-weight: 300;
 }
-#pagename{
+#news .pagename{
     color:blue;
 }
 #shopping{
     height: 560px;
+    background-color: white;
+}
+#shopping .pagename{
+    color:purple;
+}
+#shopping > .contents{
+    height: 460px;
+}
+#shoppingcontents{
+    display: flex;
+    width: 790px;
+    height: 360px;
+}
+#shoppingleft{
+    margin-right: 20px;
+    width: 250px;
+    height: 360px;
+}
+#shoppingleft > .backcolor{
+    background-color: #EEE;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+#sLeft1{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65px;
+}
+#sLeft1 a{
+    color: black;
+}
+#sLeft1 > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+#sLeft1 .dot{
+    width: 3px;
+    height: 3px;
+}
+#sLeft2{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+#sLeft2 > a{
+    color: black;
+    width: 52px;
+    height: 52px;
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#sLeft2 .box{
+    border-radius: 30px;
+    background-color: white;
+    border: 1px solid lightgray;
+    width: 30px;
+    height: 30px;
+}
+#sLeft3{
+    text-align: center;
+}
+#sLeft3:hover img{
+    transition: 0.3s;
+    transform:scale(1.1, 1.1);
+}
+#shoppingAD{
+    height: 144px;
+    overflow: hidden;
+}
+#adtext{
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+}
+#shoppingright{
+    width: 520px;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.SrightAD{
+    width: 98px;
+    font-size: 13px;
+    line-height: 150%;
+    color: black;
+    text-decoration: none;
+}
+.ADimg{
+    width: 98px;
+    height: 126px;
+    overflow: hidden;
+}
+.ADimg > img{
+    width: 98px;
+    height: 126px;;
+}
+.SrightAD:hover img{
+    transition: 0.3s;
+    transform: scale(1.1, 1.1);
+}
+#shoppingeffect{
+    display: flex;
+    text-decoration: none;
+}
+#Srighttext{
+    text-wrap: wrap;
 }
 #hobby{
-    height: 1030px;
+    background-color: white;
+}
+#hobby .contents{
+    position: relative;
+}
+.hobbybtn{
+    border-radius: 20px;
+    padding: 10px 12px;
+    border: 1px solid lightgray;
+    background-color: white;
+    color: black;
+}
+.hobbybtn:hover{
+    cursor: pointer;
+}
+#hobbynav .selected{
+    font-family: 'NanumBarunGothicBold';
+    background-color: blue;
+    color: white;
+} 
+#hobbycontents{
+    height: 625px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.hobbyitem{
+    width: 183px;
+    height: 200px;
+    text-decoration: none;
+    color: black;
+}
+.hobbyimgbox{
+    width: 183px;
+    height: 120px;
+    overflow: hidden;
+}
+.hobbyimgbox > img{
+    width: 183px;
+}
+.hobbytext{
+    text-wrap: wrap;
+    margin: 8px 0px;
+    font-size: 14px;
+    line-height: 150%;
+}
+.hobbywriter{
+    color: gray;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.hobbywriter > img{
+    border-radius: 30px;
+    margin-right: 5px;
+}
+#hcontentsTitle{
+    font-family: 'NanumBarunGothicBold';
+    margin-bottom: 20px;
+}
+#hcontentsbox{
+    display: flex;
+    justify-content: space-between;
+    height: 235px;
+    margin-bottom: 0px;
+}
+#hcontentsbox video,#hcontentsbox img{
+    width:108px;
+}
+#hcontentsbox a {
+    display: block;
+    width: 108px;
+}
+.imagebox{
+    position: relative; 
+    width: 108px;
+    height: 156px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.textbox{
+    font-size: 14px;
+    color: black;
+    text-wrap: wrap;
+    margin: 10px 0px;
+}
+.writer{
+    font-size: 13px;
+    color: gray;
+}
+.linkshover{
+    text-decoration: none;
+}
+.linkshover:hover .linksaction{
+    text-decoration: underline;
+}
+.linkshover:hover .imageaction{
+    transition: 0.3s;
+    transform: scale(1.1, 1.1);
+}
+#nextbtn{
+    bottom: 160px;
+    right: 100px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    right: 0px;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+}
+#nextbtn:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 2px 0px rgba(146, 146, 146, 0.1);
+}
+#open{
+    border-top: 1px solid lightgray;
+    text-align: center;
+    padding: 20px;
+}
+#open:hover{
+    cursor: pointer;
 }
 #login{
     font-size: 14px;
@@ -355,8 +612,49 @@ td:hover > .Medias{
 #ad2{
     height: 240px;
 }
+.titles{
+    font-family: 'NanumBarunGothicBold';
+}
 #weather{
-    height: 240px;
+    padding: 15px;
+    height: 210px;
+    background-color: white;
+}
+#weather > .weathertitle{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weathertitle a{
+    color: black;
+    text-decoration: none;
+}
+#weathercompare{
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    font-size: 11px;
+    width: 60px;
+    height: 10px;
+    padding: 7px;
+}
+#weathercompare img{
+    margin-right: 3px;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 30px;
+}
+#boxaddress{
+    font-size: 13px;
+    color: gray;
+}
+#weather > #weathercontents{
+    background-color: gray;
+    height: 150px;
 }
 #stock{
     height: 230px;
