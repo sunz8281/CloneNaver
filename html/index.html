@@ -56,7 +56,7 @@
         </div>
         <div id = container>
             <div class="section" id="section1">
-                <div id="ad1"></div>
+                <div id="ad1"><img src="../image/광고1.png"></div>
                 <div id="news">
                     <div class="contents">
                         <div class="boxTitle boxitem" style="color: lightgray;">
@@ -112,7 +112,7 @@
                     </div>
                     <div class="nextpage">
                         <div class="arrowbox">&lt;</div>
-                        <div id="pagetext"><span class="pagename">언론사</span> 더보기 <span id="current">1</span>/<span id="max">4</span></div>
+                        <div id="pagetext"><span class="pagename">언론사</span> 더보기 <span id="current">1</span>/<span class="max">4</span></div>
                         <div class="arrowbox">&gt;</div>
                     </div>
                 </div>
@@ -132,10 +132,10 @@
                                     <div><a href="" class="links">GS SHOP</a><div class="dot"></div><a href="" class="links">CJ온스타일</a><div class="dot"></div><a href="" class="links">패션플러스</a></div>
                                 </div>
                                 <div id="sLeft2" class="backcolor">
-                                    <a href="" class="links"><div class="box"></div>쇼핑홈</a>
-                                    <a href="" class="links"><div class="box"></div>리뷰적립</a>
-                                    <a href="" class="links"><div class="box"></div>주문</a>
-                                    <a href="" class="links"><div class="box"></div>장바구니</a>
+                                    <a href="" class="links"><div class="box" id="shoppinghome"></div>쇼핑홈</a>
+                                    <a href="" class="links"><div class="box" id="review"></div>리뷰적립</a>
+                                    <a href="" class="links"><div class="box" id="order"></div>주문</a>
+                                    <a href="" class="links"><div class="box" id="shoppingbag"></div>장바구니</a>
                                 </div>
                                 <div id="sLeft3"><a href="" class="links">
                                     <div id="shoppingAD"><img src="../image/교수.png" width="250px"></div>
@@ -224,23 +224,175 @@
                     <div id="loginBtn"><img id="NAVERLogo" src="../image/NAVER_Logo_White.png" alt="네이버로고"><div id="loginText">로그인</div></div>
                     <div id="FindAndJoin"><a href="" class="linktext">아이디 찾기</a> ㅣ <a href="" class="linktext">비밀번호 찾기</a> ㅣ <a href="" class="linktext">회원가입</a></div>
                 </div>
-                <div id="ad2"></div>
+                <div id="ad2"><img src="../image/광고2.png"></div>
                 <div id="weather">
-                    <div class="weathertitle">
+                    <div class="section2title">
                         <div class="boxtitle"><a href="" class="titles links">날씨</a><a href=""><div id="weathercompare"><img src=""><div>예보 비교</div></div></a></div>
                         <div id="boxaddress">부산시 가락동</div>
                     </div>
-                    <hr noshade color="lightgray" style="margin: 10px 0px;"/>
-                    <div id="weathercontents"></div>
+                    <hr noshade color="lightgray" style="margin: 13px 0px;"/>
+                    <div id="weathercontents">
+                            <div id="Wleft">
+                                <a style="color: black; text-decoration: none;" href="">
+                                    <div id="wleft1"><div id="weathermainimg"></div><div class="textbox"><div id="maintemp">99.9&deg;</div>구름 많음</div></div>
+                                    <div id="wleft2">
+                                        <div><div class="min">0&deg;</div><div style="color: lightgray;"> &nbsp;/&nbsp; </div><div class="max">999&deg;</div></div>
+                                        <div>미세&nbsp;<div style="color: red;">나쁨</div><div class="dot" style="width: 3px; height: 3px;"></div>초미세&nbsp;<div style="color: red;">나쁨</div></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="Wright">
+                                <a href="" class="linksdecoretion">
+                                    <div id="graphbox"><canvas id="weatherGraph"></canvas></div>
+                                    <ul id="weatherlist">
+                                        <li class="weatheritem">
+                                            <div class="weathertime">10시</div>
+                                            <div class="weatherimg"></div>
+                                            <div class="weatherline" style="height: 16px;"></div>
+                                            <div class="weathertemp">99&deg;</div>
+                                        </li>
+                                        <li class="weatheritem">
+                                            <div class="weathertime">12</div>
+                                            <div class="weatherimg"></div>
+                                            <div class="weatherline" style="height: 25px;"></div>
+                                            <div class="weathertemp">499&deg;</div>
+                                        </li>
+                                        <li class="weatheritem">
+                                            <div class="weathertime">14</div>
+                                            <div class="weatherimg"></div>
+                                            <div class="weatherline" style="height: 43px;"></div>
+                                            <div class="weathertemp">999&deg;</div>
+                                        </li>
+                                        <li class="weatheritem">
+                                            <div class="weathertime">16</div>
+                                            <div class="weatherimg"></div>
+                                            <div class="weatherline" style="height: 34px;"></div>
+                                            <div class="weathertemp">729&deg;</div>
+                                        </li>
+                                        <li class="weatheritem">
+                                            <div class="weathertime">18</div>
+                                            <div class="weatherimg"></div>
+                                            <div class="weatherline" style="height: 7px;"></div>
+                                            <div class="weathertemp">0&deg;</div>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
+                    </div>
                 </div>
-                <div id="stock"></div>
-                <div id="ad3"></div>
-                <div id="widget"></div>
-                <div id="ad4"></div>
+                <div id="stock">
+                    <div class="section2title">
+                        <div class="boxtitle"><a href="" class="titles links">증시</a><div id="stockExplanation">i</div></div>
+                        <div id="boxdatetime"><span id="datetime">07.12. 10:21</span><button></button></div>
+                    </div>
+                    <hr noshade color="lightgray" style="margin: 15px 0px;"/>
+                    <div id="stockcontents">
+                        <div id="stockleft">
+                            <a class="linksdecoretion" href="https://buma.wiki/coin" target="_blank">
+                                <div id="mainstockname">부마코인</div> 
+                                <div id="mainstockprice">9,999,999</div>
+                                <div id="mainincrease" style="color: #2196F3;"><img src="../image/triangle2.png" width="10px" style="margin-right: 3px;"> <span>999,999</span>&nbsp;<span>-9.09%</span></div>
+                                <div><img src="../image/부마코인.png" id="stockimg"></div>
+                            </a>
+                        </div>
+                        <div id="stockright">
+                            <a href="" class="links"><div class="anystock"><div class="stockname">주식 이름</div><div class="increase"><span class="percent"><img src="../image/triangle2.png" width="9px">0.00%&nbsp;</span>&nbsp;<span>9,999</span></div></div></a>
+                            <hr noshade color="lightgray"/>
+                            <a href="" class="links"><div class="anystock"><div class="stockname">주식 이름</div><div class="increase"><span class="percent"><img src="../image/triangle2.png" width="9px">0.00%&nbsp;</span>&nbsp;<span>9,999</span></div></div></a>
+                            <hr noshade color="lightgray"/>
+                            <a href="" class="links"><div class="anystock"><div class="stockname">주식 이름</div><div class="increase"><span class="percent"><img src="../image/triangle2.png" width="9px">0.00%</span>&nbsp;<span>9,999</span></div></div></a>
+                            <hr noshade color="lightgray"/>
+                            <a href="" class="linkshover"><div class="anystock"><div class="linksaction" id="morestock">인기 종목 더보기</div><div>&gt;</div></div></a>
+                            <hr noshade color="lightgray"/>
+                        </div>
+                    </div>
+                </div>
+                <div id="ad3"><img src="../image/광고3.png"></div>
+                <div id="widget">
+                    <div id=widgettitle>위젯 보드</div>
+                    <div id="widgetcontents">
+                        <a href="" class="widgetbox box linksdecoretion" id="calender">
+                            <div>
+                                <div class="widgetbox_title" style="margin-bottom: 10px;">캘린더</div>
+                                <div><span id="calender_date">7.13</span>&nbsp;<span style="font-size: 13px;">토</span></div>
+                            </div>
+                            <div style="color: gray; text-decoration: underline; font-size: 13px;">로그인하기</div>
+                        </a>
+                        <a href="" class="widgetbox box linksdecoretion" id="memo">
+                            <div>
+                                <div class="widgetbox_title" style="color: white;">메모</div>
+                            </div>
+                            <div style="color: gray; text-decoration: underline; font-size: 13px;">로그인하기</div>
+                        </a>
+                        <a href="" class="widgetbox box linksdecoretion" id="alalgo">
+                            <div class="widgetbox_title" style="font-size: 20px;">alalgo</div>
+                            <div id="alalgoimg"></div>
+                            <div id="translation_btn">번역하기</div>
+                        </a>
+                        <div class="widgetbox box" id="dictionaly">
+                            <a href="" class="widgetbox_title links" id="dicTitle">영어 사전</a>
+                            <a href="" id="sentence" class="linksdecoretion">
+                                <div id="english">Music is my life</div>
+                                <div id="korean">무식은 나의 인생</div>
+                            </a>
+                            <a href="" id="searchword"><div id="widget_search">단어 검색하기</div></a>
+                        </div>
+                        <div class="widgetbox" id="vibe">
+                            <div class="widgetbox_title" ><div style="display: flex;"><div id="vibelogo"></div><div style="line-height: 20px;">집중력향상BGM</div></div><div style="display: flex; align-items: center;"><div style="font-size: 12px; line-height: 20px;">다른 추천 보기</div><div id="refreshimg"></div></div></div>
+                            <div id="vibecontents">
+                                <a href="" class="vibesection linksdecoretion"><div class="vibevideo"><img src="../image/이미지6.png"></div><div class="videotext links">이러면 안 될 거 아는데 너 앞에만서면 나락</div></a>
+                                <a href="" class="vibesection linksdecoretion"><div class="vibevideo"><img src="../image/이미지6.png"></div><div class="videotext links">말도 안되는 것 같지만 너가 빛나서 반짝</div></a>
+                                <a href="" class="vibesection linksdecoretion"><div class="vibevideo"><img src="../image/이미지6.png"></div><div class="videotext links">Woo 난 네 앞에서만 이런다니까</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="window.open('https:/m.naver.com', '_blank', 'width=360, height=640, location=no,status=no,scrollbars=no');" id="openmobile"><div id="openmobile_text"><div id="mobilenaver"></div><span style="font-family: 'NanumBarunGothicBold';">모바일 네이버 메인</span>&nbsp;열기</div><div>&gt;</div></div>
+                </div>
+                <div id="ad4">
+                    <div class="contents">
+                        <a href="" id="ad4contents" class="links">
+                            <div id="ad4img"><img src="../image/이미지8.png" width="42px" height="42px"></div>
+                            <div id="ad4text">
+                                <div id="ad4title">강세일: 네이버쇼핑 최강세일 기간</div>
+                                <div>강력 할인에 강력 쿠폰 혜택까지!</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div id = footer></div>
+    <div id = footer>
+        <div id="footerSection">
+            <div id="banner">
+                <a href="" class="bannerbox linksdecoretion linkshover">
+                    <div class="banner_imgbox"><img src="../image/이미지7.png"></div>
+                    <div class="banner_textbox"><span class="bannername">부소마</span><div class="bannertitle linksaction">부소마 신입생모집</div><div class="bannercontents">지금 입학하시면 SSS급 노트북 100% 무료 증정</div></div>
+                </a>
+                <a href="" class="bannerbox linksdecoretion linkshover">
+                    <div class="banner_imgbox"><img src="../image/이미지7.png"></div>
+                    <div class="banner_textbox"><span class="bannername">부소마</span><div class="bannertitle linksaction">부소마 신입생모집</div><div class="bannercontents">지금 입학하시면 SSS급 노트북 100% 무료 증정</div></div>
+                </a>
+                <a href="" class="bannerbox linksdecoretion linkshover">
+                    <div class="banner_imgbox"><img src="../image/이미지7.png"></div>
+                    <div class="banner_textbox"><span class="bannername">부소마</span><div class="bannertitle linksaction">부소마 신입생모집</div><div class="bannercontents">지금 입학하시면 SSS급 노트북 100% 무료 증정</div></div>
+                </a>
+            </div>
+            <hr color="lightgray" noshade/>
+            <div id="notice">
+                <a href="" class="links" style="color: black;">공지사항</a><a href="" class="links" style="color: black;">서비스 전체보기<span class="linksdecoretion">&nbsp;&gt;</span></a>
+            </div>
+            <hr color="lightgray" noshade/>
+            <div id="aside">
+                <div class="asidesection"><div class="asidetitle">Partners</div><a href="" class="links">프로젝트 꽃</a>&nbsp;ㅣ&nbsp;<a href="" class="links">네이버 비즈니스</a>&nbsp;ㅣ&nbsp;<a href="" class="links">네이버 비즈니스 스쿨</a>&nbsp;ㅣ&nbsp;<a href="" class="links">네이버 광고</a>&nbsp;ㅣ&nbsp;<a href="" class="links">스토어 개설</a>&nbsp;ㅣ&nbsp;<a href="" class="links">지역업체 등록</a>&nbsp;ㅣ&nbsp;<a href="" class="links">엑스퍼트 등록</a></div>
+                <div class="asidesection"><div class="asidetitle">Developers</div><a href="" class="links">네이버 개발자 센터</a>&nbsp;ㅣ&nbsp;<a href="" class="links">오픈 API</a>&nbsp;ㅣ&nbsp;<a href="" class="links">오픈소스</a>&nbsp;ㅣ&nbsp;<a href="" class="links">네이버 D2</a>&nbsp;ㅣ&nbsp;<a href="" class="links">네이버 D2SF</a>&nbsp;ㅣ&nbsp;<a href="" class="links">네이버 랩스</a></div>
+            </div>
+            <hr color="lightgray" noshade/>
+            <div id="corp">
+                <a href="" class="links">회사소개</a>&nbsp;ㅣ&nbsp;<a href="" class="links">인재채용</a>&nbsp;ㅣ&nbsp;<a href="" class="links">제휴제안</a>&nbsp;ㅣ&nbsp;<a href="" class="links">이용약관</a>&nbsp;ㅣ&nbsp;<a href="" class="links" style="font-family: 'NanumBarunGothicBold';">개인정보 처리방침</a>&nbsp;ㅣ&nbsp;<a href="" class="links">네이버 정책</a>&nbsp;ㅣ&nbsp;<a href="" class="links">고객센터</a>&nbsp;&nbsp;&nbsp;<a href="" class="links" style="font-family: 'NanumBarunGothicBold';">&copy;Naver Corp.</a>
+            </div>
+        </div>
+    </div>
     <script src="../js/search.js?after"></script>
     <script src="../js/container.js?after"></script>
     <script>

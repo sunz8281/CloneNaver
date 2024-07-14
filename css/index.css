@@ -1,4 +1,4 @@
-body{margin: 0; font-family: 'NanumSquareACR';}
+body{margin: 0; font-family: 'NanumBarunGothic';}
 #naver{width: 1300px; margin: 0 auto; position: relative;
     /* border: 1px solid red; */
 }
@@ -10,8 +10,9 @@ body{margin: 0; font-family: 'NanumSquareACR';}
     display: flex;
 }
 #footer{
-    height: 380px;
-    background-color: cyan;
+    border-top: 1px solid lightgray;
+    height: 430px;
+    background-color: #EEE;
 }
 #naver_menu{
     display: flex;
@@ -60,6 +61,9 @@ body{margin: 0; font-family: 'NanumSquareACR';}
     align-items: center;
     margin-left: 15px;
 }
+#autoText .dot{
+    margin: 0px 5px;
+}
 .autoSection{
     font-size: 13px;
 }
@@ -69,7 +73,6 @@ body{margin: 0; font-family: 'NanumSquareACR';}
 .dot{
     border-radius: 15px;
     background-color: #CCC;
-    margin: 0px 5px;
 }
 form{
     display: flex;
@@ -111,7 +114,7 @@ form{
     border: none;
     background-color: white;
 }
-input[type="button"]{
+input[type="button"]:hover{
     cursor: pointer;
 }
 .keyboard{
@@ -168,12 +171,12 @@ nav{
 .things_img:hover{
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1), 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
 }
+
 .section{
-    background-color: gray;
     margin: 15px;
 }
 .section>div{
-    background-color:dodgerblue;
+    background-color:white;
     overflow: hidden;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -188,6 +191,9 @@ nav{
 .boxTitle{
     display: flex;
     align-items: center;
+}
+.boxtitle .dot{
+    margin: 0px 5px;
 }
 .titleSection{
     color: gray;
@@ -227,6 +233,7 @@ nav{
 }
 #ad1{
     height: 130px;
+    overflow: hidden;
 }
 #news{
     height: 430px;
@@ -285,7 +292,7 @@ td:hover > .Medias{
     color: white;
 }
 .Medias > .items:hover{
-    font-family: 'NanumSquareACB';
+    font-family: 'NanumBarunGothic';
 }
 .nextpage{
     display: flex;
@@ -386,6 +393,18 @@ td:hover > .Medias{
     border: 1px solid lightgray;
     width: 30px;
     height: 30px;
+}
+#shoppinghome{
+    background-image: url('../image/shoppinghome.png');
+}
+#review{
+    background-image: url('../image/review.png');
+}
+#order{
+    background-image: url('../image/order.png');
+}
+#shoppingbag{
+    background-image: url('../image/shoppingbag.png');
 }
 #sLeft3{
     text-align: center;
@@ -520,7 +539,7 @@ td:hover > .Medias{
     overflow: hidden;
     border-radius: 3px;
 }
-.textbox{
+#Hcontentsbox .textbox{
     font-size: 14px;
     color: black;
     text-wrap: wrap;
@@ -610,6 +629,7 @@ td:hover > .Medias{
     text-decoration: underline;
 }
 #ad2{
+    overflow: hidden;
     height: 240px;
 }
 .titles{
@@ -620,13 +640,12 @@ td:hover > .Medias{
     height: 210px;
     background-color: white;
 }
-#weather > .weathertitle{
-    border: 1px solid red;
+.section2title{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.weathertitle a{
+.section2title a{
     color: black;
     text-decoration: none;
 }
@@ -653,18 +672,491 @@ td:hover > .Medias{
     color: gray;
 }
 #weather > #weathercontents{
-    background-color: gray;
     height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+}
+#wleft{
+    width: 180px;
+    padding-top: 22px;
+    margin-left: 5px;
+}
+#wleft1{
+    display: flex;
+    height: 62px;
+}
+#maintemp{
+    font-size: 35px;
+}
+#wleft .textbox{
+    font-family: 'NanumBarunGothicBold';
+    font-size: 15px;
+    margin-left: 10px;
+}
+#Wleft .min{
+    color: blue;
+}
+#Wleft .max{
+    color: red;
+}
+#weathermainimg{
+    width: 80px;
+    height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../image/weather/day3.png');
+}
+#wleft2{
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 25px;
+}
+#wleft2 > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    margin: 5px;
+}
+#wleft2 .dot{
+    margin: 0px 5px;
+}
+#wright{
+    /* border: 1px solid red; */
+    position: relative;
+}
+#graphbox {
+    top: 30px;
+    width: 180px;
+    height: 40px;
+    position: absolute;
+}
+#weatherlist{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+}
+.weatheritem{
+    font-family: 'NanumBarunGothicBold';
+    width: 30px;
+    list-style: none;
+    height: 150px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 14px;
+}
+.weatherimg{
+    background-image: url('../image/weather/day3.png');
+    width: 27px;
+    height: 25px;
+    margin: 10px 0px;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.weatherline{
+    margin-bottom: 7px;
+    margin-top: 23px;
+    border-left: 1px solid lightgray;
+}
+.linksdecoretion{
+    color: black;
+    text-decoration: none;
 }
 #stock{
-    height: 230px;
+    padding: 15px;
+    height: 210px;
+    background-color: white;
+}
+#boxdatetime{
+    font-size: 14px;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+#boxdatetime > button{
+    background-image: url(../image/refresh3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    padding: 0px;
+    border: none;
+    background-color: white;
+}
+#boxdatetime > button:hover{
+    cursor: pointer;
+    background-image: url(../image/refresh4.png);
+}
+#stockcontents{
+    display: flex;
+    justify-content: space-between;
+}
+#stockleft{
+    width: 180px;
+    color: black;
+    text-decoration: none;
+}
+#stockimg{
+    height: 70px;
+    margin-top: 10px;
+}
+#mainstockname{
+    font-size: 15px;
+}
+#mainstockprice{
+    margin: 5px 0px;
+    font-family: 'NanumBarunGothicBold';
+    font-size: 23px;
+}
+#mainincrease{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+#stockright{
+    font-size: 15px;
+    width: 180px;
+}
+#stockright > hr{
+    margin: 0px;
+}
+.anystock{
+    line-height: 36px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.percent{
+    font-size: 11px;
+    color: #2196F3;;
+}
+.increase{
+    display: flex;
+    align-items: center;
+}
+#morestock{
+    color: gray;
 }
 #ad3{
+    overflow: hidden;
     height: 80px;
 }
+
 #widget{
-    height: 800px;
+    background-color: #f0f0f0;
+    padding: 17px;
+    height: 770px;
 }
+#widgettitle{
+    font-family: 'NanumBarunGothicBold';
+}
+#widgetcontents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 686px;
+    margin: 15px 0px;
+}
+#widget .box{
+    width: 150px;
+    height: 155px;
+}
+#widget .widgetbox{
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 18px;
+}
+#openmobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#openmobile:hover{
+    cursor: pointer;
+}
+#mobilenaver{
+    width: 22px;
+    height: 22px;
+    background-image: url('../image/모바일네이버.png');
+    margin-right: 13px;
+}
+#openmobile_text{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.widgetbox .widgetbox_title{
+    font-family: 'NanumBarunGothicBold';
+    font-size: 15px;
+}
+#calender{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#calender_date{
+    font-size: 40px;
+    font-family: 'inter';
+}
+#memo{
+    background-image: url('../image/memobackground.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#dictionaly{
+    background-image: url('../image/dictionaryBackground.png');
+    position: relative;
+}
+#dicTitle{
+    display: block;
+    margin-bottom: 20px;
+    color: black;
+}
+#sentence{
+    height: 100px;
+    width: 140px;
+    display: block;
+}
+#english{
+    line-height: 20px;
+    word-wrap: wrap;
+    word-break: break-word;
+    font-size: 18px;
+    font-family: 'NanumBarunGothicBold';
+    max-height: 100%;
+}
+#korean{
+    text-wrap: wrap;
+    word-break: break-word;
+    line-height: 20px;
+    display: none;
+    font-size: 13px;
+    color: gray;
+}
+#sentence:hover #korean{display: block;}
+#sentence:hover #english{display: none;}
+#searchword{
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    border: 1px solid lightgray;
+    background-color: white;
+    background-image: url('../image/search1.png');
+    background-size:15px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 11px) center;
+    color: white;
+    text-decoration: none;
+}
+#searchword:hover{
+    width: 120px;
+    background-color:#031F5F;
+    background-image: url('../image/search.png');
+    background-size: 15px;
+    border: 1px solid #031F5F;
+}
+#searchword:hover #widget_search{
+    font-size: 12px;
+    margin-left: 17px;
+    line-height: 38px;
+    display: block;
+}
+#widget_search{
+    display: none;
+}
+#alalgo:hover #translation_btn{
+    background-color: #008bdb;
+}
+#alalgoimg{
+    margin: 17px auto;
+    width: 70px;
+    height: 70px;
+    background-image: url('../image/알이.png');
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+#translation_btn{
+    font-size: 13px;
+    border-radius: 30px;
+    text-align: center;
+    width: 125px;
+    line-height: 40px;
+    font-family: 'NanumBarunGothicBold';
+    background-color:#01A2FF;
+    margin: 0 auto;
+    color: white;
+}
+#vibe{
+    width: 100%;
+    height: 245px;
+}
+#vibe > .widgetbox_title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#vibelogo{
+    width: 70px;
+    height: 20px;
+    background: url('../image/로1-2.png');
+    background-size: cover;
+    background-position: 50%;
+    margin-right: 7px;
+    background-color: gray;
+}
+#vibecontents{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#refreshimg{
+    background-image: url('../image/refresh3.png');
+    background-size: cover;
+    margin-left: 7px;
+    width: 14px;
+    height: 14px;
+}
+.vibevideo{
+    width: 108px;
+    height: 162px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.vibesection:hover img{
+    transition: 0.3s;
+    transform: scale(1.1, 1.1);
+}
+.videotext{
+    line-height: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 108px;
+    word-wrap: wrap;
+}
+
 #ad4{
+    overflow: hidden;
     height: 80px;
+}
+#ad4contents{
+    display: flex;
+    color: black;
+}
+#ad4img{
+    border-radius: 40px;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    margin-right: 12px;
+}
+#ad4title{
+    font-family: 'NanumBarunGothicBold';
+}
+#ad4text > div{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+
+#footerSection{
+    width: 1280px;
+    margin: 0 auto;
+}
+#banner{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin: 30px 0px;
+}
+.bannerbox{
+    height: 100px;
+    width: 420px;
+    display: flex;
+    align-items: center;
+}
+.bannerbox:hover img{
+    transition: 0.3s;
+    transform: scale(1.1, 1.1);
+}
+.banner_imgbox{
+    width: 158px;
+    height: 98px;
+    border: 1px solid lightgray;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.bannername{
+    font-size: 13px;
+    line-height: 20px;
+    padding: 3px 7px;
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    font-family: 'NanumBarunGothicBold';
+}
+.bannertitle{
+    font-family: 'NanumBarunGothicBold';
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.bannercontents{
+    font-size: 13px;
+    line-height: 20px;
+    color: gray;
+    width: 160px;
+    word-wrap: wrap;
+    word-break: break-all;
+}
+#notice{
+    font-size: 13px;
+    font-family: 'NanumBarunGothicBold';
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#aside{
+    font-size: 13px;
+    color: lightgray;
+    margin: 15px 0px;
+}
+.asidesection{
+    display: flex;
+    line-height: 30px;
+}
+.asidetitle{
+    width: 100px;
+    color: black;
+    font-size: 14px;
+    font-family: 'NanumBarunGothicBold';
+}
+#aside a{
+    color: black;
+}
+#corp{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+}
+#corp a{
+    color: black;
 }
